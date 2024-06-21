@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function palind(a){
+                var rev = 0;
+                var num1 = a;
+                while(a>0){
+                    rem = a%10;
+                    rev = rev*10+rem;
+                    a=parseInt(a/10);
+                }
+                if(num1 == rev){
+                    return ( "It is palindrome")
+                }else{
+                    return ("It is not a palindrome")
+                }
+            }
+            var num = palind(+prompt());
+            console.log(num)
+
+            
+        </script>
+    </body>
+</html>
