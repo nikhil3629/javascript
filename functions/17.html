@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function arms(a){
+                var store = a;
+                var di;
+                var cub;
+                var sum = 0;
+                while(a>0){
+                    var rem = a%10;
+                    di = rem;
+                    cub = di**3;
+                    sum=sum+cub;
+                    a=parseInt(a/10);
+                }
+                if(store == sum){
+                    return ( "is a armstrong number")
+                }else{
+                    return ( "is not a armstrong number")
+                }
+            }
+            var num = arms(+prompt());
+            console.log(num)
+        </script>
+    </body>
+</html>
