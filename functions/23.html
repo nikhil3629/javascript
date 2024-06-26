@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function madmax(a,b){
+             min = 99999;
+             max = 0;
+             for(i=a; i<=b; i++){
+                if(min>i){
+                    min=i;
+                }
+                if(max<i){
+                    max=i;
+                }
+             }
+             console.log(min)
+             console.log(max)
+            }
+            madmax(+prompt(),+prompt())
+        </script>
+    </body>
+</html>
