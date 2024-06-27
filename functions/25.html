@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+           function num(a){
+            var count = 0;
+            for(i=1;i<=a; i++){
+                 if(a%i == 0){
+                    count++
+                 }
+                 if(count == 2){
+                    console.log(a+"is prime")
+                 }else{
+                    console.log(a+"is not prime")
+                 }
+            }
+            
+           }
+           var digit = num(+prompt());
+           console.log(digit)
+        </script>
+    </body>
+</html>
