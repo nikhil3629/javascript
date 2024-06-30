@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var ob1 = {
+                name:"ravi",
+                dob:"1/5/2000"
+            }
+             function getAge(){
+                var emp1t=(new Date(this.dob)).getTime()
+                var tt = (new Date()).getTime()
+                console.log((tt-emp1t)/(1000*60*60*24*365))
+             }
+            var ob2 = {
+                name:"ramya",
+                dob:"2/5/2001"
+            }
+
+            var ob1getAge = getAge.bind(ob1)
+            ob1getAge()
+            var ob2getAge = getAge.bind(ob2)
+            ob2getAge()
+        </script>
+    </body>
+</html>

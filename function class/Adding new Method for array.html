@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            Array.prototype.max = function(){
+             var max = this[0];
+             this.forEach(function(a){
+                if(max<a){
+                    max = a;
+                }
+             })
+             return max
+            }
+            var ar = [1,2,4,5,7,8,5]
+            var br = [5,7,8,9,6,4,8]
+
+            console.log(ar.max())
+            console.log(br.max())
+        </script>
+    </body>
+</html>
