@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function abc(){
+              console.log("hello",this)
+            }
+             abc.call({name:"nikhil"});
+             abc({name:"nikhil"});
+        </script>
+    </body>
+</html>

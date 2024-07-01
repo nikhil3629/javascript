@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function abc(a,b,c){
+                console.log(a,b,c,this)
+            }
+            abc.call(1,2,3) //In "this" will contain 1 and 2,3,undefined will be stored in a,b,c
+            abc(1,2,3)
+        </script>
+    </body>
+</html>
