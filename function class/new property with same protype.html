@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function organization(n,v){
+                this.name=n;
+                this.village=v;
+            }
+            organization.prototype.group=7;
+            var mem1 = new organization("Naruto","Hidden Leaf");
+            var mem2 = new organization("Sasuke","Hidden Leaf");
+            console.log(mem1)
+            console.log(mem2)
+
+            mem1.group = "Akatsuki"
+            console.log(mem1)
+            console.log(mem2)
+        </script>
+    </body>
+</html>
