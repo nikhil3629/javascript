@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function employee(n,a,p){
+                this.name =n;
+                this.age=a;
+                this.place=p;
+             }
+             employee.prototype.company = "Akatsuki"
+             var em1 = new employee("yahiko",19,"rain");
+             var em2 = new employee("nagato",19,"rain");
+             var em3 = new employee("Konan",19,"rain");
+
+             em1.__proto__.company = "GROUP"
+             console.log(em1.company)
+             console.log(em2.company)
+             console.log(em3)
+
+        </script>
+    </body>
+</html>

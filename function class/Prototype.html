@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function employee(n,a,p){
+                this.name =n;
+                this.age=a;
+                this.place=p;
+             }
+             employee.prototype.company = "Akatsuki"
+             var em1 = new employee("yahiko",19,"rain")
+             var em2 = new employee("nagato",19,"rain")
+             console.log(em1)
+             console.log(em2)
+        </script>
+    </body>
+</html>

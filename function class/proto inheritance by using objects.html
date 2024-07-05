@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var ob1 = {
+                firstname : "venky",
+                mobile : "9985"
+            }
+            var ob2 = {
+                place : "Kurnool",
+                year : "2002"
+            }
+            ob1.__proto__ = ob2;
+            console.log(ob1.place) //It is inherited
+            console.log(ob1.year)
+            console.log(ob2.mobile) //It is not inherited
+        </script>
+    </body>
+</html>
