@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function Employee(n,d,p){
+                this.name =n;
+                this.dob=d;
+                this.place=p;
+            }
+            var em1 = new Employee("nikhil","10/10/2002","Kondapuram");
+            var em2 = new Employee("vijji","9/27/2002","guntakal")
+
+            var em1t = (new Date(em1.dob)).getTime();
+            var em2t = (new Date(em2.dob)).getTime();
+            var tt = (new Date()).getTime();
+            console.log((tt-em1t)/(1000*60*60*24*365))
+            console.log((tt-em2t)/(1000*60*60*24*365))
+        </script>
+    </body>
+</html>

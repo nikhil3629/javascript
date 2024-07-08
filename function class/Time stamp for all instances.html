@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function employee(n,d,p){
+                this.name = n;
+                this.dob = d;
+                this.placd=p;
+                this.getAge = function(){
+                    var emt = (new Date(this.dob)).getTime();
+                    var tt = (new Date()).getTime();
+                    console.log((tt - emt)/(1000*60*60*24*365))
+                }
+            }
+            var em1 = new employee("umesh","11/30/2001","Nandyal")
+            var em2 = new employee("deva","10/3/2002","pulivendula")
+
+            em1.getAge();
+            em2.getAge();
+        </script>
+    </body>
+</html>
