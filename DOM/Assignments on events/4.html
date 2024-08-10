@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center><h1 id="d">Toggle button to show true/false</h1></center>
+        <center><button id="p" onclick="abc(event)">Toggle</button>&nbsp;&nbsp;<b id="r"></b></center>
+        <script>
+            var x = document.getElementById("d")
+            x.style.color = "red"
+            var y = document.getElementById("p")
+            y.style.backgroundColor = "orange"
+            var z = document.getElementById("r")
+            z.innerHTML = "false";
+            z.style.color = "red"
+            function abc(){
+                if(z.innerHTML == "false"){
+                     z.innerHTML = "true"
+                }
+                else if(z.innerHTML == "true"){
+                    z.innerHTML = "false"
+                }
+                
+            }
+        </script>
+    </body>
+</html>

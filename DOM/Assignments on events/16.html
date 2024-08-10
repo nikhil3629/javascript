@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center>
+            <h1 style="color:red">Image Carousel</h1>
+            <div id="d"><img id="i1"src="IMG_4796.JPG" style="width:150px;height:150px"> </div>
+            <button id="d1" style="background-color: orange;" onclick="a()" >prev</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="d2" style="background-color: orange;" onclick="b()">Next</button>
+        </center>
+        <script>
+           var x = document.getElementById("d")
+           var ar = ["IMG_4896.JPG","IMG_E4690.JPG","IMG_4965.JPG","IMG_4829.JPG","IMG_4796.JPG"]
+           var i = 0;
+
+           function b(){
+            var f = document.getElementById("i1")
+            f.src = ar[i]
+            i++;
+               if(i == ar.length){
+                  i=0
+               }
+           }
+
+           function a(){
+            var f = document.getElementById("i1")
+            if(i == 0){
+                i = ar.length;
+             }
+            i--;
+            f.src = ar[i]
+          }  
+        </script>
+    </body>
+</html>

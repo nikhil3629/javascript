@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center><h1 id="d">Change button background color on click</h1></center>
+        <center><button id="b"onclick="abc(event)">white</button></center>
+        <script>
+            var x = document.getElementById("d")
+            d.style.color = "red"
+            function abc(a){
+                var y = document.getElementById("b");
+               if(y.innerHTML=="white"){
+                 y.innerHTML="green"
+                 y.style.backgroundColor="green"
+               }else{
+                y.innerHTML = "white";
+                y.style.backgroundColor = "white"
+               }
+
+
+            }
+
+
+        </script>
+    </body>
+</html>

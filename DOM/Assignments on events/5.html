@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button style="width:150px;height:150px" id="d" onclick="abc(event)"> </button>
+        <script>
+              var x = document.getElementById("d")
+              x.innerHTML = "Off";
+            function abc(){
+              if(x.innerHTML == "Off"){
+                    x.innerHTML = "On"
+                }
+                else if(x.innerHTML == "On"){
+                    x.innerHTML = "Off"
+                }
+            }
+        </script>
+    </body>
+</html>

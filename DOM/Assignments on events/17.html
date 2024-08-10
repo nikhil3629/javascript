@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="d" style="border:solid;width:100px;height:100px"></div><br>
+        <button onclick="ab(event)">RED</button>
+        <button onclick="bc(event)">GREEN</button>
+        <button onclick="ce(event)">BLUE</button>
+        <button onclick="ed(event)">RESET</button>
+        <script>
+          var x = document.getElementById("d")
+          function ab(){
+            x.style.backgroundColor="Red"
+          }
+          function bc(){
+            x.style.backgroundColor = "Green"
+          }
+          function ce(){
+            x.style.backgroundColor = "Blue"
+          }
+          function ed(){
+            x.style.backgroundColor = "white"
+          }
+        </script>
+    </body>
+</html>

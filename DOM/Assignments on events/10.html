@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+       <center> <h1 id="d">Show bulb on/off image using toggle button</h1><br>
+        <div><img id="f" style="width:100px;height:100px"></div><br>
+        <button id="g" onclick="abc(event)"></button></center>
+        <script>
+         var w = document.getElementById("d")
+         w.style.color = "red"
+         var x = document.getElementById("f")
+         var y = document.getElementById("g")
+         y.style.backgroundColor = "orange"
+         y.innerHTML = "OFF"
+        function abc(e){
+            if(e.target.innerHTML=="OFF"){
+                f.src="download.jpg"
+                e.target.innerHTML = "ON"
+            }else if(e.target.innerHTML=="ON"){
+                f.src="download (1).jpg"
+                e.target.innerHTML = "OFF"
+            }
+        }
+        
+        </script>
+    </body>
+</html>

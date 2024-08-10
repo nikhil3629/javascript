@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center><div id="d"><img src="IMG_4796.JPG" style="width:150px;height:150px" onclick="abc(event)"></div></center>
+       
+       <script>
+           var a = document.getElementById("d")
+           var ar = ["IMG_4896.JPG","IMG_E4690.JPG","IMG_4965.JPG","IMG_4829.JPG","IMG_4796.JPG"]
+           var i = 0;
+           function abc(e){
+              e.target.src = ar[i]
+              i++;
+              if(i === ar.length){
+                i=0
+              }
+              
+           }
+        </script>
+    </body>
+</html>

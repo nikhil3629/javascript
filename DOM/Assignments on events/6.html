@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        
+        <div id="d" style="border:solid;width:150px;height:150px;font-size:25px;"><b>im nothing</b></div><br>
+        <button id="b" onclick="abc()">True/False</button>
+        <script>
+            var x = document.getElementById("d")
+            x.innerHTML = "im nothing"
+            var y = document.getElementById("b")
+            function abc(){
+                if(x.innerHTML == "im nothing"){
+                    x.innerHTML = "false"
+                } 
+                else if(x.innerHTML == "false"){
+                    x.innerHTML = "true"
+                }
+                else if(x.innerHTML == "true"){
+                    x.innerHTML = "false"
+                }
+            }
+        </script>
+    </body>
+</html>
