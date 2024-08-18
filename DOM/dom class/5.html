@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button onclick="abc(event)">vens</button>
+        <button onclick="abc(event)">muts</button>
+        <button onclick="abc(event)">niks</button>
+        <br>
+        <input type="text" onkeyup="xyz()">
+        <script>
+              function abc(v){
+                console.log(v.target.innerHTML)
+              }
+              function xyz(){
+                console.log("hi")
+              }
+        </script>
+    </body>
+</html>
+<!--
+In this process, first the textbox will be focused and when we enter one variable or num then, the one which is stored in console will be printed.-->

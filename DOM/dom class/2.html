@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button onclick="abc()" onblur="xyz()">chittibabu</button>
+        <script>
+              function abc(){
+                console.log("edupoly")
+              }
+              function xyz(){
+                console.log("hello")
+              }
+        </script>
+    </body>
+</html>
+<!--
+->when click on button, only edupoly will be printed.
+->when we click on body content then the onblur event listener calls the event handler xyz() and then this  will calls the 
+function and finally it will be executed.
+->when get highlight on button then it is called as "focus".
+-->

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button onclick="abc(event)">vens</button>
+        <button onclick="abc(event)">muts</button>
+        <button onclick="abc(event)">niks</button>
+        <script>
+              function abc(v){
+                console.log(v.target.innerHTML)
+              }
+        </script>
+    </body>
+</html>
+
+<!--
+If we want to get information from text box then, In event handling, In the place of console we should write
+"v or any variable which indicates parameter,
+target indicates particular textbox,
+innerHtml gives the value that is presented in particular textbox"
+-->
