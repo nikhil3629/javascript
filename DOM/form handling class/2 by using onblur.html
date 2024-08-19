@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input id="d" type="text" onblur="abc()">
+        <h1 id="d1"></h1>
+        <script>
+            var nk ='';
+            function abc(){
+                nk=document.getElementById("d").value;
+                document.getElementById("d1").innerHTML=nk;
+                console.log("hi")
+            }
+            
+        </script>
+    </body>
+</html>
+<!--
+by using onblur we can see the text in h1 after removing focus 
+from the text box.
+->we can remove focus by clicking tab or by clicking on empty body page-->
