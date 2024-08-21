@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <table border="1px solid">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody id="d"> </tbody>
+
+        </table>
+    </body>
+    <script>
+        var emp = [
+                 {
+                    Name:'praveen',
+                    Age:36,
+                    Gender:'male',
+                    Salary:'hyd',
+                    City:10000,
+                 },
+                 {
+                    Name:'srikanth',
+                    Age:32,
+                    Gender:'male',
+                    Salary:'bengaluru',
+                    City:20000,
+                 },
+                 {
+                    Name:'pradeep',
+                    Age:21,
+                    Gender:'male',
+                    Salary:'hyd',
+                    City:25000,
+                 },
+                 {
+                    Name:'mounika',
+                    Age:20,
+                    Gender:'female',
+                    Salary:'nalgonda',
+                    City:30000,
+                 },
+                 {
+                    Name:'nikhil',
+                    Age:22,
+                    Gender:'male',
+                    Salary:'guntur',
+                    City:2000,
+                 },
+                 {
+                    Name:'riya',
+                    Age:14,
+                    Gender:'female',
+                    Salary:'indore',
+                    City:40000,
+                 },
+        ]
+
+        emp.forEach(function(a){
+            var x = document.createElement("tr");
+            var ntd = document.createElement("td");
+            ntd.innerHTML = a.Name;
+            var atd = document.createElement("td");
+            atd.innerHTML = a.Age;
+            var gtd = document.createElement("td");
+            gtd.innerHTML = a.Gender;
+            var std = document.createElement("td");
+            std.innerHTML = a.Salary;
+            var ctd = document.createElement("td");
+            ctd.innerHTML = a.City;
+            x.appendChild(ntd);
+            x.appendChild(atd);
+            x.appendChild(gtd);
+            x.appendChild(std);
+            x.appendChild(ctd);
+            document.getElementById("d").appendChild(x);
+
+        })
+    </script>
+</html>

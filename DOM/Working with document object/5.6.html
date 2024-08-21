@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var i = ['https://i.pinimg.com/736x/9b/6e/54/9b6e546c61a955df41288e1da9c8ffc6.jpg','https://e0.pxfuel.com/wallpapers/143/970/desktop-wallpaper-portrait-nature-portrait-thumbnail.jpg','https://e1.pxfuel.com/desktop-wallpaper/127/179/desktop-wallpaper-portrait-nature-portrait-art-thumbnail.jpg']
+                  i.forEach(function(a){
+                    var x = document.createElement("img");
+                    x.style.width = "150px";
+                    x.style.height = "250px";
+                    x.style.padding= '5px';
+                    x.src= a;
+                    document.body.appendChild(x);
+                  })
+        </script>
+    </body>
+</html>

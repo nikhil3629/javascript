@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <ol id="u"></ol>
+        <script>
+            students = [		
+                                    {
+                                        "firstname": "praveen",
+                                        "age": 36,
+                                        "subjects":['angular','nodejs','reactjs','java']
+                                    }, 
+                                    {
+                                        "firstname": "srikanth",
+                                        "age": 32,
+                                        "subjects":['react','mongodb']
+                                    }, 
+                                    {
+                                        "firstname": "pradeep",
+                                        "age": 21,
+                                        "subjects":['express','mongoose','python']
+                                    }
+                            ]
+                            students.forEach(function(a){
+                                var b = document.createElement("li");
+                                b.innerHTML = a.firstname;
+                                var c = document.createElement("ol");
+                                a.subjects.forEach(function(i){
+                                    var d = document.createElement("li");
+                                    d.innerHTML = i;
+                                    c.appendChild(d);
+                                })
+                                b.appendChild(c)
+                               document.getElementById("u").appendChild(b)
+                            })
+        </script>
+    </body>
+</html>

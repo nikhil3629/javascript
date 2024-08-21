@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <ul id="d1"></ul>
+        <script>
+             var ar = [11,12,13,14,15,16,17]
+             ar.forEach(function(a){
+                var x = document.createElement("li")
+                x.innerHTML = a;
+                document.getElementById("d1").appendChild(x);
+             })
+        </script>
+    </body>
+</html>
