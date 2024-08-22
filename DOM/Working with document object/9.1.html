@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <table border="1px solid">
+               <thead>
+                      <th>Name</th>
+                      <th>type</th>
+                      <th>price</th>
+                      <th>category</th>
+                      <th>manufacturer</th>
+               </thead>
+               <tbody id="tb"></tbody>
+        </table>
+        <script>
+             var products = [
+			{
+				"name": "Duracell - AAA Batteries (4-Pack)",
+				"type": "HardGood",
+				"price": 5.49,
+				"category": "Household Batteries",
+				"manufacturer": "Duracell",				
+			},
+			{
+				"name": "Hard Rock TrackPak - Mac",
+				"type": "Software",
+				"price": 29.99,
+				"category": "Recording Equipment",
+				"manufacturer": "Hal Leonard",				
+			},
+			{
+				"name": "Duracell - AA 1.5V CopperTop Batteries (4-Pack)",
+				"type": "HardGood",
+				"price": 5.62,
+				"category": "Household Batteries",
+				"manufacturer": "Duracell",				
+			},
+			{
+				"name": "Energizer - MAX Batteries AA (4-Pack)",
+				"type": "HardGood",
+				"price": 5.32,
+				"category": "Household Batteries",
+				"manufacturer": "Energizer",				
+			},
+			{
+				"name": "METRA - Antenna Cable Adapter - Black",
+				"type": "HardGood",
+				"price": 13.99,
+				"category": "Antennas & Adapters",
+				"manufacturer": "Metra",				
+			},
+			{
+				"name": "WipeDrive Six - Mac|Windows",
+				"type": "Software",
+				"price": 23.99,
+				"category": "Maintenance Software",
+				"manufacturer": "White Canyon",				
+			}
+		];
+        products.forEach(function(a){
+            var b = document.createElement("tr");
+            var c = document.createElement("td");
+            c.innerHTML = a.name;
+            b.appendChild(c);
+            var d = document.createElement("td");
+            d.innerHTML = a.type;
+            b.appendChild(d);
+            var e = document.createElement("td");
+            e.innerHTML = a.price;
+            b.appendChild(e);
+            var f = document.createElement("td");
+            f.innerHTML = a.category;
+            b.appendChild(f);
+            var g = document.createElement("td");
+            g.innerHTML = a.manufacturer;
+            b.appendChild(g);
+            document.getElementById("tb").appendChild(b);
+        })
+        </script>
+    </body>
+</html>
