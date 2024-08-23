@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="checkbox" name="tech" value="html">HTML
+        <input type="checkbox" name="tech" value="CSS">CSS
+        <input type="checkbox" name="tech" value="Js">Java Script
+        <input type="checkbox" name="tech" value="React.js">Reactjs
+        <button id="b" onclick="abc()">Add Tech</button>
+        <script>
+              function abc(){
+                var x = document.getElementsByName("tech")
+                for(var i = 0; i<=x.length-1; i++){
+                    if(x[i].checked == true){
+                        console.log(x[i].value);
+                    }
+                }
+              }
+        </script>
+    </body>
+</html>

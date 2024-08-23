@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input id="t" type="text">&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="abc(event)">Add Task</button>&nbsp;&nbsp;
+        <button onclick="bcd(event)">Sort</button>&nbsp;&nbsp;
+         <ul id="u"></ul>
+        <script>
+            var ar = []
+             function abc(){
+                var x = document.getElementById("t").value;
+                ar.push(x);
+                genUI();
+             }
+
+             function genUI(){
+                document.getElementById("u").innerHTML='';
+                ar.forEach(function(i){
+                    var y = document.createElement("li");
+                    y.innerHTML = i;
+                    document.getElementById("u").appendChild(y)
+                })
+             }
+             function bcd(){
+                ar.sort();
+                genUI();
+             }
+        </script>
+    </body>
+</html>

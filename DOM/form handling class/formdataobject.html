@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <form onsubmit="abc(event)">
+            <input type="text" name="name"><br>
+            <input type="number" name="age"><br>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="others">Others<br>
+            <input type="checkbox" name="tech" value="HTML">HTML
+            <input type="checkbox" name="tech" value="CSS">CSS
+            <input type="checkbox" name="tech" value="JS">JavaScript
+            <input type="checkbox" name="tech" value="ReactJS">ReactJs<br>
+            <button>Save</button>
+        </form>
+        <script>
+              function abc(e){
+                e.preventDefault();
+                var x = new FormData(e.target);
+                var y = {};
+                for(var i of x.keys()){
+                    y[i]=x.getAll(i).length == 1 ? x.get(i):x.getAll(i)
+                }
+                console.log(y)
+              }
+        </script>
+    </body>
+</html>

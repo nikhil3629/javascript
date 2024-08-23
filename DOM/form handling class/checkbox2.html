@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="checkbox" name="tech" value="HTML" onchange="abc()">HTML
+        <input type="checkbox" name="tech" value="CSS" onchange="abc()">CSS
+        <input type="checkbox" name="tech" value="JS" onchange="abc()">JavaScript
+        <input type="checkbox" name="tech" value="ReactJS" onchange="abc()">ReactJS
+        <ul id="u"></ul>
+        <script>
+                function abc(){
+                    var x = document.getElementsByName("tech")
+                    document.getElementById("u").innerHTML = ""
+                    for(var i = 0; i<=x.length-1; i++){
+                        
+                        if(x[i].checked == true){
+                            var y = document.createElement("li");
+                            y.innerHTML = x[i].value;
+                            document.getElementById("u").appendChild(y)
+                        }
+                    }
+                }
+        </script>
+    </body>
+</html>

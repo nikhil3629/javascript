@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="radio" name="gender" value="male">Male 
+        <input type="radio" name="gender" value="female">female
+        <input type="radio" name="gender" value="others">Others
+        <button id="b" onclick="abc()">Show gender</button>
+        <h1 id="d"></h1>
+        <script>
+            function abc(){
+                var x = document.getElementsByName("gender");
+              for(var i = 0; i<=x.length-1; i++){
+                    if(x[i].checked === true){
+                        // console.log(x[i].value)
+                        document.getElementById("d").innerHTML = x[i].value;
+                     }
+              }
+            }
+              
+        </script>
+    </body>
+</html>

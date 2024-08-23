@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="radio" value="Male" name="gender" onchange="abc(event)">Male
+        <input type="radio" value="Female" name="gender" onchange="abc(event)">Female
+        <input type="radio" value="Others" name="gender" onchange="abc(event)">Others
+        <h1 id="d"></h1>
+        <script>
+              function abc(e){
+                // var x = document.getElementsByName('gender')
+                document.getElementById("d").innerHTML = e.target.value
+              }
+        </script>
+    </body>
+
+</html>
