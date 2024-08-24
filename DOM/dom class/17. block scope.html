@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var a = 100;
+            {
+                let c = 300;
+            function abc(){
+                var b = 200;
+                b = b-40;
+                c=c-50;
+                console.log(a)
+                console.log(b)
+                console.log(c)
+            }
+        }
+            a=a-30;
+            abc();
+            abc();
+            console.dir(abc)
+        </script>
+    </body>
+</html>
+
+<!--
+In Block scope we will define the variable by using let.
+we cannot use this c variable outside the block
+In this the c will be modified again and again. because it is binded with function.
+-->

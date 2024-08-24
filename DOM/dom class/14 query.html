@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1 class="abc">Hello World</h1>
+        <ul>
+            <li>India</li>
+            <li>Pakistan</li>
+            <li class="abc">Srilanka</li>
+        </ul>
+        <p id="d1">
+            Don't give up
+            <h1>until</h1>
+            <h2 class="abc">you</h2>
+            <h3>die</h3>
+        </p>
+        <script>
+            console.dir(document)
+             var x=(document.querySelectorAll(".abc"));
+             console.log(x)
+             var y=(document.querySelector(".abc"));
+             console.log(y)
+             var z = document.getElementById("d1");
+             z.style.color = "red"
+        </script>
+    </body>
+</html>
+<!--
+->query selector provides array type of data structure.
+->for query the prototype is "NodeList"
+->difference of nodelist and html collection are:
+methods 
+nodelist: entries,foreach,keys,values
+htmlcollections: nameditem,length
+->If we will give only query then it will give only first query element
+->This document properties is used to acces the "Html elements"
+-> To change the color by using javascript.
+-->
