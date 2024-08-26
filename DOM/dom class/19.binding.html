@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="g"></div>
+        <ul id="n">
+
+        </ul>
+        <script>
+            var ar = [10,2,4,57,9,6];
+            for(let i = 0; i<ar.length; i++){
+                var newbtn = document.createElement("button")
+                newbtn.innerHTML=ar[i];
+                newbtn.onclick=function(){
+                alert(i)
+            }
+                var x = document.getElementById("g")
+                x.appendChild(newbtn)
+                
+            }
+
+            
+            
+
+            
+        </script>
+    </body>
+</html>
+
+<!--
+when we use let instead of var then the index value will get for every button because for every button is binded with separate functions 
+when we iterate let variables then it will be binded with scope
+let is created in 2015
+before 2015 we bind scope by using foreachloop.-->

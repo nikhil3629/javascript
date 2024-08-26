@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <ul id="d1"></ul>
+        <script>
+           var student=["ravana","kumbakarna","vibhisina"]
+           student.forEach(function(s){
+            var a = document.createElement("li")
+            a.innerHTML = s;
+            a.onclick=function(){
+                alert(s)
+            }
+            document.getElementById("d1").appendChild(a) 
+           
+        })
+          
+        </script>
+    </body>
+</html>
+<!-- when we bind the outer and inner function variables then it is called as losure function
+ outer function is call back function
+ inner function is eventhandler
+ when you want to bind the elements while we are generating elemnts then we can bind them in closure scope or bind scope.
+ -->

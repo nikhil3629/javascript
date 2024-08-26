@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="g"></div>
+        <ul id="n">
+
+        </ul>
+        <script>
+            var ar = [10,2,4,57,9,6];
+            for(var i = 0; i<ar.length; i++){
+                var newbtn = document.createElement("button")
+                newbtn.innerHTML=ar[i];
+                newbtn.onclick=xyz;
+                var x = document.getElementById("g")
+                x.appendChild(newbtn)
+                
+            }
+
+            var students = ["niks","muts","vens","diya"]
+            for(var i = 0; i<students.length; i++){
+                var a =document.createElement("li")
+                a.innerHTML = students[i];
+                var b = document.getElementById("n")
+                b.appendChild(a)
+            }
+            function xyz(){
+                alert("hi")
+            }
+
+            
+        </script>
+    </body>
+</html>
+<!-- this is how to generate the elements
+ In this, first we declared an array and then  we used for loop for iteration and after that we created button 
+ and we eclared value and then we tried to get the acces of paticular one in body byaccesing it we are generating values in that button.
+ ->we should not give xyz() because if we give this then the function will call at the time of button creation. so,thst we should write xyz.
+ -> Instead of this newbtn.onclick=xyz we can write newbtn.adeventlistener("clicl",xyz()) -->
