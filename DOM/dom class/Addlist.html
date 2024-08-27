@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+         <input type="text" id="t">
+         <button onclick="abc()">Add List</button>
+         <ul id="u"></ul>
+        <script>
+            var ar = [];
+            function abc(){
+                var x = document.getElementById("t").value;
+                ar.push(x)
+                add();
+            }
+
+            function add(){
+                document.getElementById("u").innerHTML = "";
+                ar.forEach(function(a,i){
+                 var nli = document.createElement("li");
+                 nli.innerHTML = a;
+
+                var del = document.createElement("button");
+                del.innerHTML = "Delete";
+                del.onclick=function(){
+                    ar.splice(i,1);
+                    add();
+                }
+                 
+                 nli.appendChild(del);
+                 document.getElementById("u").appendChild(nli);
+                })
+            }
+           
+        </script>
+    </body>
+</html>

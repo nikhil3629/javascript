@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+         body{
+            background-color: #457778;
+         }
+         button{
+            border-radius:15px;
+            color:rgb(219, 89, 46);
+            border:0px;
+            padding:20px;
+            background-color: #EADFD5;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         }
+         h1{
+            font-family:sans-serif;
+            color:lightcoral;
+            border:3px solid;
+            border-color: darksalmon;
+            display: inline;
+            padding: 10px;
+            border-radius: 10px;
+         }
+      </style>
+    </head>
+    <body>
+        <center>
+         <p></p><br><br><br><br>
+        <h1><b>Counter: </b><span id="s"></span></h1><br><br><br>
+        <button id="b" onclick="inc()">Increment</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="c" onclick="dec()">Decrement</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="d" onclick="res()">Reset</button>
+        </center>
+        <script>
+            
+             var c = 0;
+             var x = document.getElementById("s");
+             x.innerHTML = 0;
+
+             function inc(){
+                c++;
+                x.innerHTML = c;
+             }
+
+             function dec(){
+                c--;
+                x.innerHTML = c;
+             }
+
+             function res(){
+                c=0;
+               x.innerHTML = c;
+             }
+               
+        </script>
+    </body>
+</html>
