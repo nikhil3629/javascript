@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="d">im nothing</div><br>
+        <button id="b" onclick="tg(event)">True/False</button>
+        <script>
+           var x = document.getElementById("d");
+           x.innerHTML = "im nothing";
+           x.style.border="3px solid";
+           x.style.width = "250px";
+           x.style.height = "150px";
+           x.style.fontSize = "25px"
+           var y = document.getElementById("b");
+           function tg(e){
+            if(x.innerHTML == "im nothing"){
+                x.innerHTML = "true";
+            }else if(x.innerHTML == "true"){
+                x.innerHTML = "false";
+            }else if(x.innerHTML == "false"){
+                x.innerHTML = "true";
+            }
+           }
+        </script>
+    </body>
+</html>

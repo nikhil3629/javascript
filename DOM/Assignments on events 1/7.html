@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center><h1 id="h">Like and Dislike Button</h1></center>
+        <center><button id="b" onclick="abc(event)">Like</button>&nbsp;&nbsp;<b id="c">0</b><br><br></center>
+        <center><button id="d" onclick="bcd(event)">Dislike</button>&nbsp;&nbsp;<b id="e">0</b></center>
+        <script>
+             var t = document.getElementById("h");
+             t.style.color = "red";
+             
+             var u = document.getElementById("b");
+             u.style.backgroundColor = "lightgreen";
+
+             var v = document.getElementById("c");
+             v.style.color = "red";
+
+             var w = document.getElementById("d");
+             w.style.backgroundColor = "red";
+             w.style.color = "white";
+
+             var x = document.getElementById("e");
+             x.style.color = "red";
+
+             var count = 0;
+             function abc(f){
+                count++;
+                v.innerHTML=count;
+             }
+
+             var count1 = 0;
+             function bcd(k){
+                count1++;
+                x.innerHTML = count1;
+             }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="d"></div><br>
+        <button id="e" onclick="elr(event)">Red</button>&nbsp;
+        <button id="f"onclick="flr(event)">Green</button>&nbsp;
+        <button id="g"onclick="glr(event)">Blue</button>&nbsp;
+        <button id="h"onclick="hlr(event)">Reset</button>&nbsp;
+        <script>
+             var x = document.getElementById("d");
+                   x.style.width = "150px";
+                   x.style.height = "150px";
+                   x.style.border = "3px solid"
+            function elr(e){
+               x.style.backgroundColor = "red";
+            }
+            function flr(f){
+                x.style.backgroundColor = "green";
+            }
+            function glr(g){
+                x.style.backgroundColor = "blue";
+            }
+            function hlr(h){
+                x.style.backgroundColor = "white";
+            }
+              
+
+        </script>
+    </body>
+</html>

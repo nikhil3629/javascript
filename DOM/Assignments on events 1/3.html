@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="d" onclick="change(event)"></div>
+        <script>
+            var x = document.getElementById("d");
+            x.style.border= "4px solid"
+            x.style.width = "150px";
+            x.style.height = "150px";
+            x.style.backgroundColor = "white";
+            function change(e){
+                 if(x.style.backgroundColor == "white"){
+                    x.style.backgroundColor = "red";
+                 }else if(x.style.backgroundColor == "red"){
+                    x.style.backgroundColor = "green";
+                 }else if(x.style.backgroundColor == "green"){
+                    x.style.backgroundColor = "blue";
+                 }else if(x.style.backgroundColor == "blue"){
+                    x.style.backgroundColor = "pink";
+                 }else if(x.style.backgroundColor == "pink"){
+                    x.style.backgroundColor = "violet";
+                 }else if(x.style.backgroundColor == "violet"){
+                    x.style.backgroundColor = "yellow";
+                 }else if(x.style.backgroundColor == "yellow"){
+                    x.style.backgroundColor = "skyblue";
+                 }else if(x.style.backgroundColor == "skyblue"){
+                    x.style.backgroundColor = "red";
+                 }
+            }
+        </script>
+    </body>
+</html>

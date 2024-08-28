@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button id="d" onclick="cl(event)">On</button>
+        <script>
+            var x = document.getElementById("d");
+            
+            x.style.width = "100px";
+            x.style.height = "100px";
+            x.style.textAlign = "center";
+            
+            
+            function cl(e){
+                if(x.innerHTML == "On"){
+                    x.innerHTML = "Off";
+                }else if(x.innerHTML == "Off"){
+                    x.innerHTML = "On"
+                }
+            }
+        </script>
+    </body>
+</html>
