@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center><h1 id="h">Change background color of box using buttons</h1></center>
+        <center><div id="d"></div></center><br>
+        <center><button id="b" onclick="abc(event)">ON</button>&nbsp;&nbsp;&nbsp;
+        <button id="c" onclick="bcd(event)">OFF</button></center>
+        <script>
+            var w = document.getElementById("h");
+            h.style.color = 'red';
+
+            var x = document.getElementById("d");
+             x.style.border = "2px solid red";
+             x.style.width = "150px";
+             x.style.height = "150px";
+             x.style.backgroundColor = "white";
+
+            var y = document.getElementById("b");
+            y.style.backgroundColor = "orange";
+
+            var z = document.getElementById("c");
+            z.style.backgroundColor = 'orange';
+
+            function abc(s){
+                if(x.style.backgroundColor == "white"){
+                    x.style.backgroundColor = "yellow";
+                    y.style.backgroundColor = "red";
+                    z.style.backgroundColor = "white";
+                }
+            }
+
+            function bcd(n){
+                if(x.style.backgroundColor == "yellow"){
+                    x.style.backgroundColor = "white";
+                    y.style.backgroundColor = "white";
+                    z.style.backgroundColor = "red";
+                }
+            }
+        </script>
+    </body>
+</html>

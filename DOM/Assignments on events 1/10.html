@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center>
+        <h1 id="h">Show bulb on/off using toogle button</h1>
+        <div><img id="d"></div><br>
+        <button id="b" onclick="abc(event)">ON</button>
+        </center>
+        <script>
+               var x = document.getElementById("h");
+               h.style.color = "red"
+
+               var y = document.getElementById("d");
+               y.style.width = "150px";
+               y.style.height = "150px";
+               y.src = "off.png";
+
+               var z = document.getElementById("b");
+               z.style.backgroundColor = "orange";
+               z.innerHTML = "ON"
+               
+               function abc(s){
+                   if(z.innerHTML == "ON"){
+                      y.src = "on.png";
+                      z.innerHTML = "OFF"
+                   }else if(z.innerHTML == "OFF"){
+                      y.src="off.png";
+                      z.innerHTML = "ON"
+                   }
+               }
+             
+
+
+        </script>
+    </body>
+</html>

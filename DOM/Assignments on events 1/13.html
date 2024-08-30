@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center>
+            <h1 id="h">Show images using URL</h1>
+            <label id="l">Enter image URL:</label>
+            <input id="i" type="text"><br><br>
+            <button id="b" onclick="abc()">Add Image</button><br><br>
+            <div id="di"></div>
+        </center>
+        <script>
+            var a = document.getElementById("h");
+            a.style.color = 'red';
+
+            var b = document.getElementById("l");
+            b.style.color = 'red';
+
+            var c = document.getElementById("i");
+
+            var d = document.getElementById("b");
+            d.style.backgroundColor = "orange";
+
+            function abc(){
+                var e = document.createElement("img")
+                e.style.width = '150px';
+                e.style.height = '150px';
+                e.src = c.value;
+                document.getElementById("di").appendChild(e)
+            }
+
+        </script>
+    </body>
+</html>

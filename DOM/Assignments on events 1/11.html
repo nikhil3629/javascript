@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center>
+            <img id="a" onclick="abc(event)">&nbsp;&nbsp;
+            <img id="b" onclick="bcd(event)">&nbsp;&nbsp;
+            <img id="c" onclick="cde(event)"><br><br>
+            <div><img id="d"></div>
+        </center>
+        <script>
+            var w = document.getElementById("a");
+            w.style.width = "150px";
+            w.style.height = "300px";
+            w.src="y.jpg";
+
+            var x = document.getElementById("b");
+            x.style.width = "150px";
+            x.style.height = "300px";
+            x.src="k.jpg";
+
+
+            var y = document.getElementById("c");
+            y.style.width = "150px";
+            y.style.height = "300px";
+            y.src = "rf.jpg"
+
+
+            var z = document.getElementById("d");
+            z.style.width = "250px";
+            z.style.height = "400px";
+           
+
+            function abc(s){
+                z.src="y.jpg" 
+            }
+
+            function bcd(n){
+                z.src="k.jpg";
+            }
+
+            function cde(m){
+                z.src="rf.jpg";
+            }
+
+
+        </script>
+    </body>
+</html>
