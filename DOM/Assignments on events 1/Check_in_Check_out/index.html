@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+            body{
+                color:#3D52AD;
+                background-color: #ADBBDA;
+            }
+
+            h2{
+                font-family: ;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <p></p><br><br>
+        <h1 id="h"></h1><br>
+        <h1 id="i"></h1><br>
+        <i onclick="In()" class="fs-1 bi bi-person-fill-check">Check IN</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i onclick="Out()" class="fs-1 bi bi-person-fill-x">Check OUT</i><br><br>
+        
+
+        <ul id="d">
+          <h2 style="margin-right:25px;">Time Log:</h2>
+        </ul>
+        <i  onclick="total()" class="fs-1 bi bi-stopwatch-fill"></i><br><br>
+        
+        <h2 id="t">Total Time Worked:</h2><br>
+        
+        </center>
+        
+        <script>
+            var u = new Date();
+
+            var v = document.getElementById("h");
+            v.innerHTML = u.getDate()+"/"+u.getMonth()+"/"+u.getFullYear();
+            
+           
+            setInterval(function(){
+            var d = new Date();
+            var x = document.getElementById("i")
+            x.innerHTML = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+            },100);
+
+            
+            var times = [];
+            var totaltime = 0;
+
+            function In(){
+                    var checkin = new Date();
+                    times.push(Date.now());
+                    var newli =  document.createElement('li')
+                    newli.style.listStyle= 'None';
+                    newli.innerHTML = "IN : " + checkin
+                    document.getElementById('d').appendChild(newli) 
+            }
+
+            function Out() {
+                        var out = new Date()
+                        times.push(Date.now());
+                        var newli =  document.createElement('li')
+                         newli.style.listStyle= 'None'
+                        newli.innerHTML = "OUT : " + out
+                        document.getElementById('d').appendChild(newli)  
+            }
+
+            function total(){
+                        totalTime = 0;
+                        for(let i = 0; i <= times.length-1; i = i + 2){
+                            totalTime = totalTime + (times[i+1] - times[i])
+                        }
+                        document.getElementById('t').innerHTML =  "Total Time worked : " + (totalTime/ 1000)  + 'seconds'
+                            
+                        }
+
+
+            
+        </script>
+    </body>
+</html>
