@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="a"></div><br>
+        <button id="b" onclick="abc(event)">RED</button>
+        <button id="c" onclick="bcd(event)">GREEN</button>
+        <button id="d" onclick="cde(event)">BLUE</button>
+        <button id="e" onclick="def(event)">RESET</button>
+        <script>
+             var v = document.getElementById("a");
+             v.style.width = "150px";
+             v.style.height = "150px";
+             v.style.border = "2px solid";
+
+             var w = document.getElementById("b");
+             var x = document.getElementById("c");
+             var y = document.getElementById("d");
+             var z = document.getElementById("e");
+
+             function abc(f){
+                v.style.backgroundColor = "red"
+             }
+             function bcd(g){
+                v.style.backgroundColor = "green"
+             }
+             function cde(h){
+                v.style.backgroundColor = "blue"
+             }
+             function def(i){
+                v.style.backgroundColor = "white"
+             }
+        </script>
+    </body>
+</html>

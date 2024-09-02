@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center>
+            <button onclick="IN()">IN</button>
+            <button onclick="OUT()">OUT</button>
+            <button onclick="Total()">Total</button>
+            <h2>Total time Worked</h2>
+            <h2>Time Log</h2>
+            <ul id="d"></ul>
+        </center>
+        <script>
+            document.getElementById("d").innerHTML='';
+
+             function IN(){
+                var date = document.createElement("li");
+                vdate = new Date().toISOString();
+                date.innerHTML = "IN:"+vdate;
+                document.getElementById("d").appendChild(date);
+                
+               }
+            function OUT(){
+                var date = document.createElement("li");
+                vdate = new Date().toISOString();
+                date.innerHTML = "OUT:"+vdate;
+                document.getElementById("d").appendChild(date);
+               }
+        </script>
+    </body>
+</html>

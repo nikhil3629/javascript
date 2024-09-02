@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center>
+            <img id="d" onclick="abc()">
+        </center>
+        <script>
+             var x = document.getElementById("d");
+             x.style.width="400px";
+             x.style.height = "500px";
+             x.style.border="1px solid";
+             var ar = ["https://i.pinimg.com/564x/7c/0d/45/7c0d453ec2623e60b804c9ca99300651.jpg","https://qph.cf2.quoracdn.net/main-qimg-bdbae462dd40c37ff8df33c8b61d9937-lq","https://qph.cf2.quoracdn.net/main-qimg-92c27084f676d7af3c964280120679eb-lq","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1-2CoTj_JscUJXHpUdGRiX__sLjsokZBlg&s","https://static.toiimg.com/thumb/msid-34677144,imgsize-174152,width-400,resizemode-4/34677144.jpg"]
+             
+             var i = 0;
+             function abc(){
+              x.src = ar[i];
+              i++;
+              if(i === ar.length){
+                i=0;
+              }
+             }
+             
+            
+             
+        </script>
+    </body>
+</html>
