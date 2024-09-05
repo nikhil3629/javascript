@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center>
+            <input type="text" id="i" disabled><br><br>
+            <button id="b" onclick="abc()">Enable the text box</button>
+        </center>
+        <script>
+             var x = document.getElementById("i");
+             var y = document.getElementById("b")
+             function abc(){
+                x.removeAttribute("disabled");
+            }
+        </script>
+    </body>
+</html>

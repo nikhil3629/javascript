@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center>
+        first name:<input id="f" type="text" name="fname"><br>
+        <p id="pn"></p><br>
+        last name:<input type="text" name="lname"><br>
+        middle name:<input type="text" name="mname"><br>
+        <button onclick="ab()">Update</button>
+        
+        </center>
+       <script>
+               function ab(){
+                 var x = document.getElementById("f")
+                 if(x.value == ""){
+                     document.getElementById("pn").innerHTML="**The above field is mandatory";
+                 }
+               }
+       </script>
+    </body>
+</html>

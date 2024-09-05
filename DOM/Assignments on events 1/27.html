@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="file" onchange="abc(event)"><br><br>
+        <div id="d"></div>
+        <script>
+            function abc(e){
+                document.getElementById("d").innerHTML = '';
+                var imageaddress = URL.createObjectURL(e.target.files[0]);
+                var y = document.createElement("img");
+                y.src=imageaddress;
+                y.style.width='300px';
+                y.style.height='300px';
+           
+                document.getElementById("d").appendChild(y);
+            }
+           
+           
+        </script>
+    </body>
+</html>

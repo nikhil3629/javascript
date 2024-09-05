@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <table border="1px" cellspacing="0px" width="400px" height="250px">
+            <form onsubmit="abc(event)">
+               <tr>
+                <td><label>Firstname</label></td>
+                <td><input type="text" name="Firstname"></td>
+               </tr>
+               <tr>
+                <td><label>Lastname</label></td>
+                <td><input type="text" name="Lastname"></td>
+               </tr>
+               <tr>
+                <td><label>Date of Birth:</label></td>
+                <td><input type="date" name="date"></td>
+               </tr>
+               <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Others">Others
+                </td>
+               </tr>
+               <tr>
+                <td><label>Technologies</label></td>
+                <td><input type="checkbox" name="tech" value="html">html
+                    <input type="checkbox" name="tech" value="css">css
+                    <input type="checkbox" name="tech" value="bootstrap">bootstrap
+                    <input type="checkbox" name="tech" value="react">react
+                    <input type="checkbox" name="tech" value="java">java
+                 </td>
+               </tr>
+               <tr>
+                <td><label>Country:</label></td>
+                <td>
+                    <select name="country" >
+                        <option>India</option>
+                        <option>Srilanka</option>
+                        <option>Pakistan</option>
+                        <option>Russia</option>
+                        <option>United States Of America</option>
+                    </select>
+                </td>
+               </tr>
+               <tr>
+                <td><label>Comments:</label></td>
+                <td>
+                    <textarea name="address"></textarea>
+                </td>
+               </tr>
+               <tr>
+                <td colspan="2"><center><button>Save</button></center></td>
+               </tr>
+            </form>
+        </table>
+        <script>
+                 function abc(e){
+                    e.preventDefault();
+                    var x = new FormData(e.target);
+                    var y = {};
+                    for(var i of x.keys()){
+                        y[i] = x.getAll(i).length==1 ? x.get(i) : x.getAll(i);
+                    }
+                    console.log(y)
+                 }
+        </script>
+    </body>
+</html>
