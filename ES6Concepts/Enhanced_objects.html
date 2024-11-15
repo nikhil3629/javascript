@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            //  var kingdom="Hastinapur";
+            // var position="Yuvaraj";
+            // var othername="suyodhana";
+            // var ob1={
+            //     name:"duuryodhana",
+            //     kingdom,
+            //     position,
+            //     othername
+            // }
+           
+            // console.log(ob1)
+
+            
+
+            //  var number = [852943,46765];
+            //  var address={
+            //     place:"hyd"
+            //  };
+            //  var gender= "male"
+
+            // var ob1={
+            //     name:"muts",
+            //     age:18,
+            //     number,
+            //     address,
+            //     gender
+            // }
+            // console.log(ob1)
+
+
+
+             
+            //  var number = 852943;
+            //  var address="hyd";
+            //  var area = "kukatpally"
+            
+            // var ob1={
+            //     name:"muts",
+            //     age:18,
+            //     [number+address+area]:{
+            //         packets:5
+            //     }
+            // }
+            // console.log(ob1)
+
+            var address = "kukatpally";
+            var groceries = {milk:"Nandini",oil:"Freedom"}
+
+            var house = {
+                Name:"Venky",
+                address,
+                ...groceries
+
+            }
+            console.log(house)
+
+        </script>
+    </body>
+</html>
+<!--
+*we should declare variables before object then it will give correct output.
+*If we declare variables after the object then it will gives undefined for particular key.
+
+*when we place values in type of array,value and object then it will accept as same variable.
+
+*we can do dynamic generation in enhanced objects (example for particular distrubution of items such as groceries,delivery etc)
+*we can do function calls in object.
+
+*In house object if we write 'groceries' then it will give its objects as object of groceries in output.
+If we give '...groceries' then it will give its object as object to house because of spread operator or destructuring operator  -->

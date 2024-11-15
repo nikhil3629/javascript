@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            // var ar = [1,2,5,7,9];
+            // var br = [...ar];
+            // console.log(br);
+
+            // var cr = [1,5,8,7,9];
+            // var dr = [10,12,4,78,5];
+            // var er = [...cr,...dr];
+            // console.log(er);
+
+            // var ob1 = {
+            //     name:"nikhil",
+            //     age:22
+            // }
+            // var ob2 = {
+            //     place:"kondapuram",
+            //     pin:516444
+            // }
+            // var ob3 = {...ob1,...ob2}
+            // console.log(ob3);
+
+            // var ar = [5,7,8];
+            // var a = 15;
+            // ar = [...ar,a];
+            // console.log(ar);
+
+            // var ob1={
+            //     fname:"let",
+            //     DOB: 2015
+            // }
+            // var ob2={
+            //     name:"const",
+            //     Dob:2015
+            // }
+            // ob1={...ob1,...ob2}
+            // console.log(ob1);
+
+            var ob1={
+                name:"let",
+                DOB: 2015
+            }
+            var ob2={
+                name:"const",
+                Dob:2015
+            }
+            ob1={...ob1,...ob2}
+            console.log(ob1);
+        </script>
+    </body>
+</html>
+<!--
+*we can create duplicate array by using spread operator where the references of both arrays will be different.
+*we can join arrays by using concatenation and spread operator.
+*If we want to add objects then we can add them by using spread operator and we cannot add them by using concat method because for object concate method is not there.
+*we can push value to array by using spread operator instead of push method
+*In object or array, if there are two arrays then if we want to send one array values to another array then we can simply send them by using spread operator
+*when we are combinig objects if there are same keys then object will be override.-->

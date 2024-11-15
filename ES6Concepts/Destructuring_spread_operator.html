@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <body></body>
+        <script>
+            //   var ar = [1,5,7,4,8,9]
+            //   var[a,b,c]=ar;
+            //   console.log(a);
+            //   console.log(b);
+
+            // var br = [15,7,8,5,9,3,7];
+            // var[x,y,,,z]=br;
+            // console.log(z);
+
+            // var obj = {
+            //     name:'niks',
+            //     age:22,
+            //     gender:'male',
+            //     address:{
+            //         place:'kdp',
+            //         pincode:516444
+            //     }
+            // }
+
+            // var{name,gender,age}=obj;
+            // console.log(name);
+            // console.log(age);
+
+            // var twn = {
+            //     name:'niks',
+            //     age:22,
+            //     gender:'male',
+            //     address:{
+            //         place:'kdp',
+            //         pincode:516444
+            //     }
+            // }
+            // var{age:ak,gender:gdr,name:ni,address:{place}}=twn;
+            // console.log(place);
+            // console.log(ni);
+            // console.log(ak);
+            // console.log(gdr);
+            // console.log(gender);
+            // console.log(age);
+           
+            
+            
+
+            // var[a,b,c]=[10,20,3];
+            // console.log(a);
+
+            // var[a,b] = [10,20];
+            // var[a,b]=[b,a];
+            // console.log(a);
+            // console.log(b);
+
+            // var cr = [5,15,4,8,9,67,5,7,3,9];
+            // var[a,b,...w]=cr;
+            // console.log(w);
+
+              var obj = {
+                name:'niks',
+                age:22,
+                gender:'male',
+                address:{
+                    place:'kdp',
+                    pincode:516444
+                }
+            }
+
+            var{name,...h}=obj;
+            console.log(name);
+            console.log(h);
+
+
+
+
+        </script>
+    </head>
+</html>
+<!--
+destructuring is used to simplfy or change the structure.
+*we can access the particular values from array by creating variables in destructuring.
+*In object wee can alias another name for key once another name is assigned to key then we cannot acces by its old name.
+*we can swap the variables by using destructuring.
+*semi-colon is important in destructuring.
+*if we ...w this is called as ret parameter which will stores remaining values in variable
+*we should write rest always last element otherwise it will throw error.
+-->

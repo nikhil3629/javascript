@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+
+            var ob1 = {
+                Name:"Naveen",
+                Age:22,
+                Course:"Cyber",
+                address:{
+                    place:"Guntur"
+                }
+            }
+
+            console.log(ob1);
+            var ob2 = ob1;
+            console.log(ob2);
+            var ob3 = {...ob1};
+            console.log(ob3);
+            var ob4 = JSON.parse(JSON.stringify(ob1))
+            console.log(ob4);
+
+            // ob1.Age=12;
+            // ob1.address.place="vijaywada";
+            // console.log(ob1);
+            // console.log(ob2);
+            // console.log(ob3);
+            // console.log(ob4);
+
+        </script>
+    </body>
+</html>
+<!--
+*In this first we have created object named as ob1.
+*Here, In ob1 reference it will store Name,Age,Course and address and in address reference it will store place.
+*In line number 16, by doing console we will get output as {Name:"Naveen",Age:22,Course:"Cyber",address:{lace:"Guntur"} } 
+*17, we are assigining the reference of ob1 to ob2 so, if we do any changes in ob1 or ob2 then changes will be made in both because of same reference.
+*18,Here by giving console, we will get output as {Name:"Naveen",Age:22,Course:"Cyber",address:{place:"Guntur"} } 
+*19, Here we are creating duplicate object by using ob1 reference so, the reference of ob1 and ob3 are different.
+*20,Here by giving console, we will get output as {Name:"Naveen",Age:22,Course:"Cyber",address:{lace:"Guntur"} }
+*21,Here we are assigining the values of ob1 and the reference of ob4 and its sub obj address is different from ob1.
+*22,now we will get output as {Name:"Naveen",Age:22,Course:"Cyber",address:{lace:"Guntur"} }.
+
+**Here we will discuss on two topics they are known as,
+1.shallow copy: shallow means little, In this the  object(ob3) reference will be different and if there are any sub objects in it that, then it will have another
+reference(address) but for this reference it will be same as main object(ob3) sub reference(address)
+*If there are any changes in main obj reference then it will not change anything.
+*if there are any changes in sub obj reference then the sub obj in ob3 also changes.
+
+2.Deep copy: Deep copy is nothing but it will copy exactly of main obj.it will contain different refernce(ob4) and in sub obj also.
+*if there are any changes in ob1 or in its sub obj, then there will be no changes in ob4
+
+*In line no 24 and 25 we are doing modifications to age and place.
+26,Here by giving console, we will get output as {Name:"Naveen",Age:12,Course:"Cyber",address:{place:"Vijaywada"} } 
+27,Here by giving console, we will get output as {Name:"Naveen",Age:12,Course:"Cyber",address:{place:"Vijaywada"} } because it has same reference as ob1.
+28,Here by giving console, we will get output as {Name:"Naveen",Age:22,Course:"Cyber",address:{place:"Vijaywada"} } In this the main obj is not changed because its reference is different from ob1  but, its sub obj is changed because it sub obj has same reference of sub obj of ob1.
+29,Here by giving console, we will get output as {Name:"Naveen",Age:22,Course:"Cyber",address:{lace:"Guntur"} } In this there will be no changes because obj4 and its sub obj address is different.
+-->
